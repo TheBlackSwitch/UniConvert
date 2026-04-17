@@ -45,7 +45,7 @@ def getfilenames():
 
     if keuze_bestandsmethode == 1:
         # Alle bestanden toevoegen aan de lijst van de map waar script nu instaat.
-        lijst_bestanden = os.listdir(os.path.dirname(sys.executable))
+        lijst_bestanden = os.listdir(os.getcwd())
         return lijst_bestanden
     elif keuze_bestandsmethode == 2:
         print("Enter a relative path to this exe file.")
